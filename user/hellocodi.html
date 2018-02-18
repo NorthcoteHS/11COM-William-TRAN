@@ -11,9 +11,20 @@
 
     <body>
 <button><img src="Codi.jpg"></button>
-        <audio controls><source src="Bee-Sound.mp3"></audio>
+        
+<audio id="myaudio">
+    <source src="Bee-Sound.mp3" type="audio/mp3">
+        </audio>
+        
+        <p>Click the buttons to play the audio</p>
+        
+        <button onclick="playAudio()" type="button">Play Audio</button>
         <script>
-            /* Your JS goes here */
+   var x = document.getElementById("myaudio")
+   
+   function playAudio() {
+       x.play();
+   }
         </script>
     </body>
 </html>
