@@ -13,14 +13,19 @@
     </head>
 
     <body>
-        <!-- Your HTML goes here -->
-
-        <!-- Uncomment to use external JavaScript
-        <script src="PATH/TO/EXTERNAL/SCRIPT.JS"></script>
-        -->
-
+<button onclick="playaudio()" type="button"><img src="8ball.jpg"></button>
+        
+<audio id="myaudio">
+    <source src="Cha_Ching.mp3" type="audio/mp3">
+        </audio>
+        
         <script>
-            /* Your JS goes here */
+   var x = document.getElementById("myaudio")
+   
+   function playAudio() {
+       x.load();
+       x.play();
+   }
         </script>
     </body>
 </html>
