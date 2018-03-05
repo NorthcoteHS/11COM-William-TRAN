@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Mix</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            /* Your CSS goes here */
+            body {
+                text-align: center;
+            }
+        </style>
+    </head>
+    
+    <body>       
+<button onclick="playDrum()" type="button"><img src="drum.jpg" height="100" width="100">
+</button>
+
+<button onclick="playGuitar()" type="button"><img src="guitar.jpg" height="100" width="100">
+</button>
+        
+<audio id="Drum">
+    <source src="Sounds/Big Drum sound effect.mp3" type="audio/mp3">
+        </audio>
+        
+<audio id="Guitar">
+    <source src="Sounds/To Be Continued Song _FREE%20DOWNLOAD_ (Audio).mp3" type="audio/mp3">
+        </audio>
+        
+      <script>
+   var x = document.getElementById("Drum")
+
+   function playDrum() {
+       x.load();
+       x.play();
+   }
+          
+    var y = document.getElementById("Guitar")
+      
+    function playGuitar() {
+        y.load();
+        y.play();
+    }  
+        </script>    
+    </body>
+</html>

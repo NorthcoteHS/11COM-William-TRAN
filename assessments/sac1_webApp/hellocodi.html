@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HelloCodi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <style>
+            /* Your CSS goes here */
+            body {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+<button onclick="playAudio()" type="button"><img src="Codi.jpg"></button>
+        
+<audio id="myaudio">
+    <source src="Bee-Sound.mp3" type="audio/mp3">
+        </audio>
+        
+        <p>Touch the Bee</p>
+        
+        <script>
+   var x = document.getElementById("myaudio")
+   
+   function playAudio() {
+       x.load();
+       x.play();
+   }
+        </script>
+    </body>
+</html>
