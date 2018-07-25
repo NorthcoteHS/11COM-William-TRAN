@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Uncomment to use external CSS
+        <link rel="stylesheet" href="PATH/TO/EXTERNAL/STYLES.CSS">
+        -->
+
+        <style type="text/css">
+            /* Your CSS goes here */
+        </style>
+    </head>
+
+    <body>
+    First Number: <input type="text" id="FirstNumber">
+    Second Number: <input type="text" id="SecondNumber">
+
+<select id="operation">
+  <option value="1">+</option>
+  <option value="2">-</option>
+  <option value="3">×</option>
+  <option value="4">÷</option>
+</select>
+
+<button onclick="myfunction()">Calculate</button>
+<p id="Answer">answers</p>
+        <script>
+        function myfunction() {
+        var x=parseFloat(document.getElementById("FirstNumber").value);
+        var y=parseFloat(document.getElementById("SecondNumber").value);
+        var op=document.getElementById("operation").value;
+
+        if(op == "1")
+        {document.getElementById("Answer").innerHTML=x+y;}
+
+        if(op == "2")
+        {document.getElementById("Answer").innerHTML=x-y;}
+
+        if(op == "3")
+        {document.getElementById("Answer").innerHTML=x*y}
+
+        if(op == "4")
+        {document.getElementById("Answer").innerHTML=x/y}
+        }
+        </script>
+    </body>
+</html>
