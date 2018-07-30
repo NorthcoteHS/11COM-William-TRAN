@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>YOUR TITLE GOES HERE</title>
+        <title>PigLatin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Uncomment to use external CSS
@@ -14,14 +14,14 @@
     </head>
 
     <body>
-        <!-- Your HTML goes here -->
-
-        <!-- Uncomment to use external JavaScript
-        <script src="PATH/TO/EXTERNAL/SCRIPT.JS"></script>
-        -->
-
+    Field1: <input type="text" id="field1" value="Hello World!"><br>
+    Field2: <input type="text" id="field2"><br>
+    <br>
+    <button onclick="myFunction()">Copy Text</button>
         <script>
-            /* Your JS goes here */
+function myFunction() {
+    document.getElementById("field2").value = document.getElementById("field1").value;
+}
         </script>
     </body>
 </html>
