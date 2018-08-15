@@ -3,14 +3,6 @@
     <head>
         <title>Barry fish</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script>
-           function findcost()
-           var mybox1 =document.getElementById('bw').value;
-           var mybox2 =document.getElementById('fh').value;
-           var result =document.getElementById('result').value;
-           var myResult = mybox1 * mybox2;
-           result.innerHTML = myResult;
-        </script>
 
         <style type="text/css">
             /* Your CSS goes here */
@@ -23,7 +15,15 @@
         Rockling <input type="text" id="r"/><br>
         Snapper Fillet <input type="text" id="sf"/><br>
         Gummy Shark <input type="text" id="gs"/><br>
-
       </form>
+
+        <script>
+           function findcost()
+           var mybox1 =document.getElementById('bw').value;
+           var mybox2 =document.getElementById('fh').value;
+           var result =document.getElementById('result').value;
+           var myResult = mybox1 * mybox2;
+           result.innerHTML = myResult;
+        </script>
     </body>
 </html>
