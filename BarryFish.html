@@ -10,20 +10,70 @@
     </head>
 
     <body>
-      <form>
-        Barramundi Wild <input type="text" id="bw"/><br> Flathead Tails <input type="text" id="fh"/><br>
-        Rockling <input type="text" id="r"/><br>
-        Snapper Fillet <input type="text" id="sf"/><br>
-        Gummy Shark <input type="text" id="gs"/><br>
-      </form>
+        Barramundi Wild <input type="text" id="bw"/>
+        <button onclick="Result1()">Result</button><br>
+
+        Flathead Tails <input type="text" id="fh"/>
+        <button onclick="Result2()">Result</button><br>
+
+        Rockling <input type="text" id="r"/>
+        <button onclick="Result3()">Result</button><br>
+
+        Snapper Fillet <input type="text" id="sf"/>
+        <button onclick="Result4()">Result</button><br>
+
+        Gummy Shark <input type="text" id="gs"/>
+        <button onclick="Result5()">Result</button><br>
+
+         Are you a business custormer<input type="checkbox" name="Business" value="Yes" id="true">Yes<br>
+
+          <p id="display"></p>
 
         <script>
-           function findcost()
-           var mybox1 =document.getElementById('bw').value;
-           var mybox2 =document.getElementById('fh').value;
-           var result =document.getElementById('result').value;
-           var myResult = mybox1 * mybox2;
-           result.innerHTML = myResult;
+           function Result1(){
+               var amount = parseInt(document.getElementById("bw").value);
+               var totalprice=9.80* amount;
+               if (document.getElementById("true").checked){
+                   totalprice=9.80* amount* 0.9;
+               }
+            document.getElementById("display").innerHTML = totalprice ;
+           }
+
+           function Result2(){
+               var amount = parseInt(document.getElementById("fh").value);
+               var totalprice=10.80* amount;
+               if (document.getElementById("true").checked){
+                   totalprice=10.80* amount* 0.9;
+               }
+            document.getElementById("display").innerHTML = totalprice ;
+           }
+
+            function Result3(){
+               var amount = parseInt(document.getElementById("r").value);
+               var totalprice=9.70* amount;
+               if (document.getElementById("true").checked){
+                   totalprice=9.70* amount* 0.9;
+               }
+            document.getElementById("display").innerHTML = totalprice ;
+           }
+
+            function Result4(){
+               var amount = parseInt(document.getElementById("sf").value);
+               var totalprice=9.80* amount;
+               if (document.getElementById("true").checked){
+                   totalprice=9.80* amount* 0.9;
+               }
+            document.getElementById("display").innerHTML = totalprice ;
+           }
+            function Result5(){
+               var amount = parseInt(document.getElementById("gs").value);
+               var totalprice=8.50* amount;
+               if (document.getElementById("true").checked){
+                   totalprice=8.50* amount* 0.9;
+               }
+            document.getElementById("display").innerHTML = totalprice ;
+           }
+
         </script>
     </body>
 </html>
