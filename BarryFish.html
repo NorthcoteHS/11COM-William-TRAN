@@ -5,24 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <style type="text/css">
-            /* Your CSS goes here */
+
         </style>
     </head>
 
     <body>
-        Barramundi Wild <input type="text" id="bw"/>
+        Barry's Fishmonger<br>
+        Barramundi Wild $9.80 <input type="text" id="bw"/>
         <button onclick="Result1()">Result</button><br>
 
-        Flathead Tails <input type="text" id="fh"/>
+        Flathead Tails $10.99<input type="text" id="fh"/>
         <button onclick="Result2()">Result</button><br>
 
-        Rockling <input type="text" id="r"/>
+        Rockling $9.70<input type="text" id="r"/>
         <button onclick="Result3()">Result</button><br>
 
-        Snapper Fillet <input type="text" id="sf"/>
+        Snapper Fillet $9.80<input type="text" id="sf"/>
         <button onclick="Result4()">Result</button><br>
 
-        Gummy Shark <input type="text" id="gs"/>
+        Gummy Shark $8.50<input type="text" id="gs"/>
         <button onclick="Result5()">Result</button><br>
 
          Are you a business custormer<input type="checkbox" name="Business" value="Yes" id="true">Yes<br>
@@ -41,9 +42,9 @@
 
            function Result2(){
                var amount = parseInt(document.getElementById("fh").value);
-               var totalprice=10.80* amount;
+               var totalprice=10.99* amount;
                if (document.getElementById("true").checked){
-                   totalprice=10.80* amount* 0.9;
+                   totalprice=10.99* amount* 0.9;
                }
             document.getElementById("display").innerHTML = totalprice ;
            }
